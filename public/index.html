@@ -27,6 +27,15 @@
     <title>Netlify Forms Test</title>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
